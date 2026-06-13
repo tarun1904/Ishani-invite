@@ -125,9 +125,19 @@
   }
   .btn.map{ background: linear-gradient(90deg,#6c63ff,#8b7bff); }
   .btn.cal{ background: linear-gradient(90deg,#ff6f91,#ff9fb3); }
-  .btn.rsvp{ background: linear-gradient(90deg,#00c853,#66ffb3); color:#063; }
+  .btn.rsvp{  background:#25D366; /* WhatsApp green */  font-size:14px;     /* smaller text */  padding:8px 12px;   /* slightly tighter */
+    color:white;
+    font-weight:700;
+    border-radius:12px;
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+  }
+  .wa-icon{
+    font-size:16px; /* icon size */
+  }
+
   .btn.call{ background: linear-gradient(90deg,#ff9800,#ffc107); }
-  .btn.wh{ background:#25D366; }
 
   .cake-row{ display:flex; align-items:center; gap:12px; margin-top:12px; }
 
@@ -203,9 +213,13 @@
         <div class="actions" aria-label="Quick actions">
           <a class="btn map" href="https://maps.app.goo.gl/vYzLzvzMcwkrxpmW7" target="_blank" rel="noopener noreferrer">📍 Open Map</a>
 
-          <a class="btn cal" href="https://www.google.com/calendar/render?action=TEMPLATE&text=Ishani+Srivastava+1st+Birthday&dates=20260727T133000Z/20260727T153000Z&details=Join+us+to+celebrate+Ishani%27s+first+birthday.+With+love%3A+Chhaya%2C+Tarun%2C+Meghana%2C+Ahaana&location=Jamuna+Bhawan%2C+104%2C+BT+Rd%2C+Subhas+Pally+Park%2C+Bonhooghly+Government+Colony%2C+Kolkata+-+700108&sf=true&output=xml" target="_blank" rel="noopener noreferrer">📅 Add to Calendar</a>
+          <a class="btn cal" href="https://www.google.com/calendar/render?action=TEMPLATE&text=Ishani+Srivastava+1st+Birthday&dates=20260727T133000Z/20260727T153000Z&details=Join+us+to+celebrate+Ishani%27s+first+birthday.+With+love%3A+Chhaya%2C+Tarun%2C+Meghana%2C+Ahaana&location=Jamuna+Bhawan%2C+104%2C+BT+Rd%2C+Subhas+Pally+Park%2C+Bonhooghly+Government+Colony%2C+Kolkata+-+700108&sf=true&output=xml" target="_blank" rel="noopener noreferrer">📅  Jul 27</a>
 
          <a class="btn rsvp" href="https://wa.me/919804247924?text=Hello%2C%20I%20would%20like%20to%20RSVP%20for%20Ishani%27s%201st%20Birthday%20on%2027%20July%202026.%20Guests%3A%20" target="_blank" rel="noopener noreferrer">💬 RSVP on WhatsApp</a>
+
+         <a class="btn rsvp" href="https://wa.me/919804247924?text=Hello%2C%20I%20would%20like%20to%20RSVP%20for%20Ishani%27s%201st%20Birthday%20on%2027%20July%202026.%20Guests%3A%20" target="_blank" rel="noopener noreferrer"> <span class="wa-icon">🟢</span> RSVP  </a>
+
+
 
           <a class="btn call" href="tel:+919804247924">📞 Call Us</a>
          

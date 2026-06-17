@@ -5,9 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>Ishani's 1st Birthday</title>
 
-<header class="hero">
-  <h1>🎈 Our Little Star Turns One 🎂</h1>
-</header>
+
 <style>
   :root{
     --accent:#ff6f91;
@@ -79,6 +77,12 @@
   display:block;
   border-bottom: 6px solid rgba(255,255,255,0.6);
 }
+
+  /* Floating animation for balloons */
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+  }
 
 
   /* Main content area */
@@ -181,8 +185,11 @@
     <!-- Header -->
     <div class="header">
       <div class="title">
-        <h1>Ishani Srivastava</h1>
-        <p>Our little star turns <strong>one</strong>. Come celebrate with cake, songs and smiles.</p>
+        <header class="hero">
+          <h1 style="text-align: center;">🎈 Our Little Star <strong style="color: rgb(255, 0, 212);">Ishani</strong> Turning One 🎂</h1>
+        </header>
+      
+        <p style="color: purple; font-weight: bold; text-align: center;">Come celebrate with cake, songs and smiles 🙂</p>
       </div>
       <div style="text-align:right">
         <div class="date-badge">27 July 2026</div>
@@ -190,8 +197,12 @@
       </div>
     </div>
 
-    <!-- Banner image placed right after the header text -->
-    <div class="banner" role="img" aria-label="Celebration banner image"></div>
+    <!-- Banner image with floating balloons -->
+    <div style="position: relative; display: flex; align-items: center; justify-content: center;">
+      <img src="b3.gif" alt="Left balloon" style="position: absolute; left: 10px; top: 50px; width: 200px; height: 200px; object-fit: contain; animation: float 3s ease-in-out infinite;">
+      <div class="banner" role="img" aria-label="Celebration banner image"></div>
+      <img src="balloon.gif" alt="Right balloon" style="position: absolute; right: 10px; top: 50px; width: 200px; height: 200px; object-fit: contain; animation: float 3s ease-in-out infinite; transform: scaleX(-1);">
+    </div>
 
     <!-- Main content -->
     <div class="main">
@@ -229,7 +240,7 @@
         <div class="actions" aria-label="Quick actions">
           <a class="btn map" href="https://maps.app.goo.gl/vYzLzvzMcwkrxpmW7" target="_blank" rel="noopener noreferrer">📍 Open Map</a>
 
-          <a class="btn cal" href="https://www.google.com/calendar/render?action=TEMPLATE&text=Ishani+Srivastava+1st+Birthday&dates=20260727T133000Z/20260727T153000Z&details=Join+us+to+celebrate+Ishani%27s+first+birthday.+With+love%3A+Chhaya%2C+Tarun%2C+Meghana%2C+Ahaana&location=Jamuna+Bhawan%2C+104%2C+BT+Rd%2C+Subhas+Pally+Park%2C+Bonhooghly+Government+Colony%2C+Kolkata+-+700108&sf=true&output=xml" target="_blank" rel="noopener noreferrer">📅 Add to Calendar</a>
+          <a class="btn cal" href="https://www.google.com/calendar/render?action=TEMPLATE&text=Ishani+Srivastava+1st+Birthday&dates=20260727T190000Z/20260727T220000Z&details=Join+us+to+celebrate+Ishani%27s+first+birthday.+With+love%3A+Chhaya%2C+Tarun%2C+Meghana%2C+Ahaana&location=Jamuna+Bhawan%2C+104%2C+BT+Rd%2C+Subhas+Pally+Park%2C+Bonhooghly+Government+Colony%2C+Kolkata+-+700108&sf=true&output=xml" target="_blank" rel="noopener noreferrer">📅 Add to Calendar</a>
 
          <a class="btn rsvp" href="https://wa.me/919804247924?text=Hello%2C%20I%20would%20like%20to%20RSVP%20for%20Ishani%27s%201st%20Birthday%20on%2027%20July%202026.%20Guests%3A%20" target="_blank" rel="noopener noreferrer">
             <img src="whatsapp.svg" alt="WhatsApp" class="icon"> RSVP
@@ -246,8 +257,8 @@
 
     <div class="footer">
       <div>
-        <div style="font-weight:700">Lovingly hosted by: Chhaya Srivastava </div><br>
-        <div class="small">Ishani Srivastava • 1st Birthday • 27 July 2026</div>
+        <div style="font-weight:700; font-size: 16px; background: linear-gradient(90deg, #ff6f91, #ff9fb3); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">💝 Lovingly hosted by Grandmother - Chhaya Srivastava 💝</div><br>
+        <div class="small" style="font-style: italic; color: var(--accent); font-weight: 600;">✨ Your presence is the best gift! 💝 ✨</div>
       </div>
       </div>
   </div>
